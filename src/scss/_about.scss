@@ -20,28 +20,24 @@
 
         .about__bio {
             flex: 1;
-            text-align: left;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
 
-            &.about__ul {
-                text-decoration: underline #54be90 0.3rem;
-                text-underline-offset: 0.2rem;
-            }
+            .about__bio__info {
 
-            .button_container {
-                width: 100%;
-                margin: auto;
-                display: grid;
+                text-align: left;
 
-
-                a {
-                    margin: auto;
+                &.about__ul {
+                    text-align: left;
+                    text-decoration: underline #54be90 0.3rem;
+                    text-underline-offset: 0.2rem;
                 }
-                
-
             }
-        
         }
-        
     }
 }
 

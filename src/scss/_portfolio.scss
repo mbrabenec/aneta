@@ -16,10 +16,14 @@
         .project {
             background-color: white;
             display: flex;
-            flex-flow: column nowrap;
+            flex-direction: column;
             flex-basis: 31%;
             margin-bottom: 1.2rem;
             padding: 0.3rem;
+
+            &:hover {
+                background-color: $dk_grey;
+            }
     
             .project__imgdiv {
                 height: 8 rem;
@@ -31,13 +35,20 @@
                     
                 }
             }
-    
-            .project--text {
+
+            .project__info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: lightgray;
                 color: black;
                 text-align: center;
                 padding: 0.5rem;
-    
+                margin-top: 0.5rem;
+
             }
+    
+                
         }
     }
 }

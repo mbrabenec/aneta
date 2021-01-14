@@ -1,0 +1,47 @@
+//* Footer */
+.footer {
+	background-color: #ebebeb;
+    padding: 4rem 15%;
+    text-align: center;
+}
+
+.footer .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+	color: #232323;
+	font-size: 3rem;
+    font-weight: 600;
+    padding: 1rem;
+
+    .footer__line {
+        width: 25%;
+        height: 0.5rem;
+        background-color: #54be90;
+
+    }
+}
+
+.footer .social__link {
+    margin: 0 2rem;
+    
+    svg {
+        width: 4rem;
+        height: 4rem;
+
+        path {
+            fill: #444444;
+            opacity: 0.25;
+        }
+
+    }
+    &:hover svg path {
+        opacity: 0.5;
+    }
+}
+
+.footer__copy {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 4rem;
+}
