@@ -26,6 +26,20 @@ html, body {
 .black {
   color: black; }
 
+.button {
+  color: #ffffff;
+  background-color: #54be90;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 8px 0px rgba(68, 68, 68, 0.5);
+  font-size: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  padding: 0.5rem 3rem; }
+
+.button:hover {
+  box-shadow: 2px 2px 8px 0px rgba(68, 68, 68, 0.8); }
+
 /* top nav bar */
 .nav {
   width: 100vw;
@@ -234,22 +248,14 @@ html, body {
       .about .about__aneta .about__bio.about__ul {
         text-decoration: underline #54be90 0.3rem;
         text-underline-offset: 0.2rem; }
+      .about .about__aneta .about__bio .button_container {
+        width: 100%;
+        margin: auto;
+        display: grid; }
+        .about .about__aneta .about__bio .button_container a {
+          margin: auto; }
 
 /* BUTTON */
-.button {
-  color: #ffffff;
-  background-color: #54be90;
-  border-radius: 0.5rem;
-  box-shadow: 2px 2px 8px 0px rgba(68, 68, 68, 0.5);
-  font-size: 1.25rem;
-  text-align: center;
-  text-decoration: none;
-  margin: auto;
-  padding: 0.5rem 3rem; }
-
-.button:hover {
-  box-shadow: 2px 2px 8px 0px rgba(68, 68, 68, 0.8); }
-
 .social {
   width: 100vw;
   background-color: #232323;

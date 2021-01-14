@@ -26,6 +26,19 @@
                 text-decoration: underline #54be90 0.3rem;
                 text-underline-offset: 0.2rem;
             }
+
+            .button_container {
+                width: 100%;
+                margin: auto;
+                display: grid;
+
+
+                a {
+                    margin: auto;
+                }
+                
+
+            }
         
         }
         
