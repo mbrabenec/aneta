@@ -1,0 +1,50 @@
+
+.portfolio {
+    background: #54be90;
+    width: 100vw;
+    color: black;
+    padding: 0 0 4rem 0;
+}
+
+.projectsview {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .project {
+        background-color: white;
+        display: flex;
+        flex-flow: column nowrap;
+        flex-basis: 31%;
+        margin-bottom: 1.2rem;
+        padding: 0.3rem;
+
+        .project__imgdiv {
+            height: 8 rem;
+
+            .project__imgdiv > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
+        }
+
+        .project--text {
+            color: black;
+            text-align: center;
+            padding: 0.5rem;
+
+        }
+    }
+}
+
+
+
+
+
+
+

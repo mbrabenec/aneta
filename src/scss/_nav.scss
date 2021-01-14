@@ -1,0 +1,42 @@
+/* top nav bar */
+
+.nav {
+    width: 100vw;
+    background: $background;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .nav__logobox {
+        flex: 1;
+        margin-left: 1rem;
+
+        .nav__logo {
+            height: 2.4rem;
+            align-self: center;
+        }
+    }
+
+    .nav__link {
+        background: $dk_grey;
+        color: #ffffff;
+    
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 300;
+        
+        padding: 0.8rem;
+        flex: 1;
+
+        &:hover {
+            background: $bright;
+        }
+    }
+}

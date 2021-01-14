@@ -1,0 +1,22 @@
+.mission {
+    width: 100vw;
+}
+
+.mission__text {
+    margin: auto;
+    width: 80%;
+
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 2.5rem 0 3.5rem 0;
+
+    line-height: 1.8rem;
+
+    .mission--p {
+        font-weight: 500;
+        
+    }
+}

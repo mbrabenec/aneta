@@ -1,0 +1,46 @@
+// design process
+
+.offer {
+    width: 100vw;
+    min-width: 800px;
+    flex-wrap: nowrap;
+    flex-basis: 20%;
+    background-color: #232323;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.offer__stage {
+    flex: 1;
+    padding-bottom: 2rem;
+}
+
+.offer__shape {
+    
+    margin: auto;
+    height: 4rem;
+    width: 8rem;
+    background-color: white;
+    border-radius: 0 0 4rem 4rem;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.offer__skill {
+    text-align: center;
+    color: #54be90;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.offer__details {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 1.25rem;
+    flex: 1;
+}
