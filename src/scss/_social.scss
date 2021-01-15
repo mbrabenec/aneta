@@ -17,6 +17,11 @@
             width: 5em;
             height: 5em;
 
+            @media (max-width: 530px) {
+                width: 4em;
+                height: 4em;
+            }
+
             path {
                 fill: white;
 

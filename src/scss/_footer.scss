@@ -1,7 +1,7 @@
 //* Footer */
 .footer {
 	background-color: #ebebeb;
-    padding: 4rem 15%;
+    padding: 3rem 5%;
     text-align: center;
 }
 
@@ -23,11 +23,12 @@
 }
 
 .footer .social__link {
-    margin: 0 2rem;
+    margin: 0 1rem;
     
     svg {
         width: 4rem;
         height: 4rem;
+        margin: 0;
 
         path {
             fill: #444444;

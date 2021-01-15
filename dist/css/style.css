@@ -137,12 +137,17 @@ html, body {
 
 .offer {
   width: 100vw;
-  min-width: 800px;
+  min-width: 750px;
   flex-wrap: nowrap;
   flex-basis: 20%;
   background-color: #232323;
   display: flex;
   justify-content: space-around; }
+  @media (max-width: 750px) {
+    .offer {
+      flex-direction: column;
+      min-width: 0;
+      padding: 1em; } }
 
 .offer__stage {
   flex: 1;
@@ -156,6 +161,9 @@ html, body {
   border-radius: 0 0 4rem 4rem;
   margin-bottom: 2rem;
   flex: 1; }
+  @media (max-width: 750px) {
+    .offer__shape {
+      display: none; } }
 
 .offer__skill {
   text-align: center;
@@ -172,16 +180,23 @@ html, body {
   font-weight: 200;
   margin: 1.25rem;
   flex: 1; }
+  @media (max-width: 750px) {
+    .offer__details {
+      width: 70%;
+      margin: auto; } }
 
 .skills {
   width: 100vw;
   background-color: white;
   padding: 0 0 4rem 0; }
   .skills .skills__graphic {
-    max-width: 60%;
+    max-width: 70%;
     margin: auto;
     display: flex;
     flex-direction: column; }
+    @media (max-width: 640px) {
+      .skills .skills__graphic {
+        max-width: 85%; } }
     .skills .skills__graphic .skills__container {
       margin: auto;
       display: flex;
@@ -240,6 +255,12 @@ html, body {
       flex-basis: 31%;
       margin-bottom: 1.2rem;
       padding: 0.3rem; }
+      @media (max-width: 800px) {
+        .portfolio .projectsview .project {
+          flex-basis: 48%; } }
+      @media (max-width: 600px) {
+        .portfolio .projectsview .project {
+          flex-basis: 100%; } }
       .portfolio .projectsview .project:hover {
         background-color: #444444; }
       .portfolio .projectsview .project .project__imgdiv {
@@ -265,15 +286,20 @@ html, body {
   margin-bottom: 2rem;
   padding-bottom: 1rem; }
   .about .about__aneta {
-    width: 70%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
+    @media (max-width: 750px) {
+      .about .about__aneta {
+        flex-direction: column; } }
     .about .about__aneta .about__img {
       border-radius: 50%;
-      width: 18rem;
-      margin-right: 3rem; }
+      width: 18rem; }
+      @media (min-width: 750px) {
+        .about .about__aneta .about__img {
+          margin-right: 3rem; } }
     .about .about__aneta .about__bio {
       flex: 1;
       display: flex;
@@ -302,6 +328,10 @@ html, body {
     .social .social__container .social__link svg {
       width: 5em;
       height: 5em; }
+      @media (max-width: 530px) {
+        .social .social__container .social__link svg {
+          width: 4em;
+          height: 4em; } }
       .social .social__container .social__link svg path {
         fill: white; }
 
@@ -358,7 +388,7 @@ html, body {
 
 .footer {
   background-color: #ebebeb;
-  padding: 4rem 15%;
+  padding: 3rem 5%;
   text-align: center; }
 
 .footer .heading {
@@ -375,10 +405,11 @@ html, body {
     background-color: #54be90; }
 
 .footer .social__link {
-  margin: 0 2rem; }
+  margin: 0 1rem; }
   .footer .social__link svg {
     width: 4rem;
-    height: 4rem; }
+    height: 4rem;
+    margin: 0; }
     .footer .social__link svg path {
       fill: #444444;
       opacity: 0.25; }
