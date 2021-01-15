@@ -12,6 +12,12 @@
     align-items: center;
     justify-content: space-around;
 
+    @media (max-width: 640px) 
+        {
+            justify-content: space-between;
+        }
+
+
     .nav__logobox {
         flex: 1;
         margin-left: 1rem;
@@ -20,6 +26,18 @@
             height: 2.4rem;
             align-self: center;
         }
+    }
+
+    .nav__burger {
+        padding: 1em;
+        font-size: 2em;
+        display: none;
+
+        @media (max-width: 640px) 
+            {
+            display: flex;
+            }
+
     }
 
     .nav__link {
@@ -35,8 +53,18 @@
         padding: 0.8rem;
         flex: 1;
 
+        @media (max-width: 640px) 
+            {
+            display: none;
+            }
+
+
         &:hover {
             background: $bright;
         }
+
+            
+
     }
+
 }

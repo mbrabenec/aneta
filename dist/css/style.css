@@ -51,12 +51,22 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-around; }
+  @media (max-width: 640px) {
+    .nav {
+      justify-content: space-between; } }
   .nav .nav__logobox {
     flex: 1;
     margin-left: 1rem; }
     .nav .nav__logobox .nav__logo {
       height: 2.4rem;
       align-self: center; }
+  .nav .nav__burger {
+    padding: 1em;
+    font-size: 2em;
+    display: none; }
+    @media (max-width: 640px) {
+      .nav .nav__burger {
+        display: flex; } }
   .nav .nav__link {
     background: #444444;
     color: #ffffff;
@@ -67,32 +77,47 @@ html, body {
     font-weight: 300;
     padding: 0.8rem;
     flex: 1; }
+    @media (max-width: 640px) {
+      .nav .nav__link {
+        display: none; } }
     .nav .nav__link:hover {
       background: #54be90; }
 
 /* welcome splash with image */
 .welcome {
-  height: 30rem;
+  width: 100vw;
+  height: 40rem;
   background-image: url(/img/polar2.jpg);
   background-size: cover;
-  text-align: center;
-  margin-top: 8rem;
-  padding-top: 5rem; }
-  .welcome .welcome__blurb {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 3.5rem; }
-    .welcome .welcome__blurb h1 {
-      display: inline;
-      color: #54be90;
-      font-weight: 500;
-      font-size: 4rem;
-      text-decoration: underline white 0.4rem;
-      text-underline-offset: 0.3rem; }
-  .welcome .welcome__job h2 {
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 3rem; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .welcome .welcome__container {
+    font-size: 3.5em;
+    text-align: center; }
+    @media (max-width: 750px) {
+      .welcome .welcome__container {
+        font-size: 2.25em; } }
+    @media (max-width: 525px) {
+      .welcome .welcome__container {
+        font-size: 2.0em; } }
+    .welcome .welcome__container .welcome__blurb {
+      color: #ffffff;
+      font-weight: 400; }
+      .welcome .welcome__container .welcome__blurb h1 {
+        display: inline;
+        color: #54be90;
+        font-weight: 500;
+        font-size: 1.5em;
+        text-decoration: underline white 0.12em;
+        text-underline-offset: 0.1em; }
+    .welcome .welcome__container .welcome__job h2 {
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 1em;
+      margin: 0.3em; }
 
 .mission {
   width: 100vw; }

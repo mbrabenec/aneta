@@ -1,34 +1,51 @@
 /* welcome splash with image */
 
 .welcome {
-    height: 30rem;
+    width: 100vw;
+    height: 40rem;
     background-image: url(/img/polar2.jpg);
     background-size: cover;
-    text-align: center;
-    margin-top: 8rem;
-    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
-    .welcome__blurb {
-        color: $titlecol;
-        font-weight: 400;
-        font-size: 3.5rem;
 
-        h1 {
-            display: inline;
-            color: $bright;
-            font-weight: 500;
-            font-size: 4rem;
+    .welcome__container {
 
-        text-decoration: underline white 0.4rem;
-        text-underline-offset: 0.3rem;
+        font-size: 3.5em;
+        text-align: center;
+
+        @media (max-width: 750px) {
+                font-size: 2.25em;
+            }
+
+        @media (max-width: 525px) {
+            font-size: 2.0em;
         }
 
-    }
+        .welcome__blurb {
+            color: $titlecol;
+            font-weight: 400;
+   
+            h1 {
+                display: inline;
+                color: $bright;
+                font-weight: 500;
+                font-size: 1.5em;
+                
+            text-decoration: underline white 0.12em;
+            text-underline-offset: 0.1em;
+            }
+        }
 
-    .welcome__job h2 {
-        color: $titlecol;
-        font-weight: 300;
-        font-size: 3rem;
+        .welcome__job h2 {
+            color: $titlecol;
+            font-weight: 300;
+            font-size: 1em;
+            margin: 0.3em;
 
+        }
     }
 } 
