@@ -16,6 +16,7 @@ function createStructure(done) {
         'src',
         'src/fonts',
         'src/img',
+        'src/img',
         'src/scss',
     ];
     const files = [
@@ -80,6 +81,13 @@ function publishImages(done) {
         .pipe(gulp.dest('dist/img'));
 }
  
+function publishJavascripts(done) {
+    return gulp.src('src/js/**/*')
+    .pipe(gulp.dest('dist/js'));
+}
+
+
+
 // compile SCSS files
 function compileScss(done, for_production = false) {
     let pipeline = gulp.src('src/scss/**/*.scss')
@@ -114,6 +122,7 @@ function watchFiles(done) {
     gulp.watch("src/**/*.html", gulp.series(publishHtml, reload));
     gulp.watch("src/fonts/**/*", gulp.series(publishFonts, reload));
     gulp.watch("src/img/**/*", gulp.series(publishImages, reload));
+    gulp.watch("src/js/**/*", gulp.series(publishJavascripts, reload));
     gulp.watch("src/scss/**/*.scss", gulp.series(compileScss, reload));
 }
  
@@ -135,7 +144,8 @@ function reload(done) {
  
 // export tasks
 exports.structure = createStructure;
-exports.publish   = gulp.series(cleanAssets, publishHtml,  publishFonts, publishImages);
-exports.build     = gulp.series(cleanAssets, publishHtmlProduction,  publishFonts, publishImages, compileScssProduction);
-exports.build_dev = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, compileScssDevelopment);
-exports.watch     = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, compileScssDevelopment, serve, watchFiles);
+exports.publish   = gulp.series(cleanAssets, publishHtml,  publishFonts, publishImages, publishJavascripts);
+exports.build     = gulp.series(cleanAssets, publishHtmlProduction,  publishFonts, publishImages, publishJavascripts, compileScssProduction);
+exports.build_dev = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, publishJavascripts, compileScssDevelopment);
+exports.watch     = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, publishJavascripts, compileScssDevelopment, serve, watchFiles);
+
